@@ -2,10 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client';
 
 function App ({ name }) {
+  React.useEffect(() => {
+    console.log('lifecycle works')
+  }, [])
   return <p>Hello {name}</p>
 }
 
-class CustomChart extends HTMLElement {
+class TimeSeriesChart extends HTMLElement {
   connectedCallback() {
     const mountPoint = document.createElement('div');
     this.attachShadow({ mode: 'open' }).appendChild(mountPoint);
@@ -15,4 +18,4 @@ class CustomChart extends HTMLElement {
   }
 }
 
-customElements.define('custom-chart', CustomChart)
+customElements.define('time-series-chart', TimeSeriesChart)

@@ -1,10 +1,10 @@
 import './App.css';
-import 'custom-chart'
+import 'time-series-chart'
 
 function App() {
   return (
     <div className="App">
-      <custom-chart data-name="Jonatas" />
+      <time-series-chart data-name="Jonatas" />
     </div>
   );
 }
