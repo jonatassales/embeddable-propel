@@ -1,0 +1,30 @@
+body {
+  margin: 20px;
+  background-color: #c3c3c3;
+  color: #ff0000;
+
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+strong {
+  color: #003e6b
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+}

@@ -1,5 +1,5 @@
 {
-  "name": "custom-chart",
+  "name": "time-series-chart",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

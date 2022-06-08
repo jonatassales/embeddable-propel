@@ -4,16 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <title>Netflix Dashboard</title>
 </head>
 <body>
-  <time-series-chart 
-    metric="netflixReleasesByDate" 
-    account="ACT01G4NG8JYDP24VJP6PC8CJFS36"
-    environment="ENV01G4NG8K0107VGG26CPBMR9C0C"
-    accessToken="eyJraWQiOiJKNUlxYzVpZ0NsVWR3Mmc3QVdBK3ArVHJmRmxYZFQyeTRZWThRWk5iejlvPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4MjJiOGVlMi0xN2Q5LTQ2ODEtODgyNC04NWE4MjkyMTFkNjIiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMl9RQVJWY0VraHYiLCJjbGllbnRfaWQiOiI2MWVlMmRqNThlNjhuNGg3cXRtbmJpaWFsNSIsIm9yaWdpbl9qdGkiOiIzYzQwNGNmYS05OTgxLTQxOWUtYTg5Zi02ZjY4Njc4Y2MyNzQiLCJldmVudF9pZCI6IjM4OTE1ZDE2LWFkOTgtNDJkNC05NjA3LTEwYmU1MWMyOTY1ZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2NTQyODY4ODEsImV4cCI6MTY1NDczMDg3NiwiaWF0IjoxNjU0NzI3Mjc2LCJqdGkiOiI5NDhjM2ZmNC0xOTJlLTQxYjMtYWJmMS00OTI1ZGY1YjU0ODgiLCJ1c2VybmFtZSI6IjgyMmI4ZWUyLTE3ZDktNDY4MS04ODI0LTg1YTgyOTIxMWQ2MiJ9.JICtj_QYpzm2Eb63F0lz4UmdjJXzmtmW9jH8SiMxfarpm4pstr3g44KFOTmGDGsFssC8Qe1a73ZMUscwaEJMCO0Wsi2dg8O1HVtKcztniryRAbpn1lLvmn3_tBCf6AK_TM5kdEE_yFgBlMf4-7DF_i-n8OHgL6bZ1E6GG-hYRLxbbo8uXM_Gk_PVMcCnXnCj4BFBxwLseLp98NK_QVgbnNiKUt5qf-5KW3rtbk93A9kdPSuA7rH0g3_sMEmBV59rZLi-Dk4fCrSApf1adrrnHyFd080xE4DZxky2Blmm9idMp_0zrRy9i9dYG_T9a4LAe3bxW08TjKVOD5lLRqNWFg"
-    color="#ffff00"
-  ></time-series-chart>
+  <header>
+    <h1>My Netflix Dashboard</h1>
+  </header>
+  <main>
+    <h2>Movies releases over the time</h2>
+
+    <time-series-chart 
+      metric="netflixReleasesByDate" 
+      account="ACT01G4NG8JYDP24VJP6PC8CJFS36"
+      environment="ENV01G4NG8K0107VGG26CPBMR9C0C"
+      accessToken="eyJraWQiOiJKNUlxYzVpZ0NsVWR3Mmc3QVdBK3ArVHJmRmxYZFQyeTRZWThRWk5iejlvPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4MjJiOGVlMi0xN2Q5LTQ2ODEtODgyNC04NWE4MjkyMTFkNjIiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMl9RQVJWY0VraHYiLCJjbGllbnRfaWQiOiI2MWVlMmRqNThlNjhuNGg3cXRtbmJpaWFsNSIsIm9yaWdpbl9qdGkiOiIzYzQwNGNmYS05OTgxLTQxOWUtYTg5Zi02ZjY4Njc4Y2MyNzQiLCJldmVudF9pZCI6IjM4OTE1ZDE2LWFkOTgtNDJkNC05NjA3LTEwYmU1MWMyOTY1ZiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE2NTQyODY4ODEsImV4cCI6MTY1NDczMDg3NiwiaWF0IjoxNjU0NzI3Mjc2LCJqdGkiOiI5NDhjM2ZmNC0xOTJlLTQxYjMtYWJmMS00OTI1ZGY1YjU0ODgiLCJ1c2VybmFtZSI6IjgyMmI4ZWUyLTE3ZDktNDY4MS04ODI0LTg1YTgyOTIxMWQ2MiJ9.JICtj_QYpzm2Eb63F0lz4UmdjJXzmtmW9jH8SiMxfarpm4pstr3g44KFOTmGDGsFssC8Qe1a73ZMUscwaEJMCO0Wsi2dg8O1HVtKcztniryRAbpn1lLvmn3_tBCf6AK_TM5kdEE_yFgBlMf4-7DF_i-n8OHgL6bZ1E6GG-hYRLxbbo8uXM_Gk_PVMcCnXnCj4BFBxwLseLp98NK_QVgbnNiKUt5qf-5KW3rtbk93A9kdPSuA7rH0g3_sMEmBV59rZLi-Dk4fCrSApf1adrrnHyFd080xE4DZxky2Blmm9idMp_0zrRy9i9dYG_T9a4LAe3bxW08TjKVOD5lLRqNWFg"
+      color="#ff0000"
+    ></time-series-chart>
+  </main>
+  <footer>
+    <p>&copy; 2022 Netflix</p>
+    <p>Powered by <strong>Propel</strong></p>
+  </footer>
   <script src="https://time-series-chart.s3.us-east-2.amazonaws.com/index.js"></script>
 </body>
 </html>
