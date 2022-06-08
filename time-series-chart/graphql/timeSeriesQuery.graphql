@@ -1,0 +1,8 @@
+query TimeSeries($uniqueName: String!, $input: TimeSeriesInput!) {
+  metricByName(uniqueName: $uniqueName) {
+    timeSeries(input: $input) {
+      labels
+      values
+    }
+  }
+}
